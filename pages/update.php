@@ -10,7 +10,7 @@ $sql = 'SELECT b.book_id, b.title, GROUP_CONCAT(a.name_author SEPARATOR \', \') 
         GROUP BY b.title';
 $query = $pdo->query($sql);
 ?>
-    <form action="update.php" method="post">
+    <form action="?pages=update" method="post">
     <h1>Какую книгу будем сейчас редактировать?</h1>
     <select name="book_title">
         <?php
