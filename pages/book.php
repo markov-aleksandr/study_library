@@ -11,9 +11,6 @@ ORDER BY `Количество`  DESC;
 ';
 $query = $pdo->query("$sql");
 $query->execute();
-//echo '<pre>';
-//var_dump($row = $query->fetch());
 while ($row = $query->fetch()){
     echo '<p style="font-size: 20px; font-weight: bolder; font-family: \'Open Sans\'">'.$row['NameAuthor'].' - ' . $row['Количество']. '</p>';
-//    echo $row['Количество'].'</p>';
 }
