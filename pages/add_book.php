@@ -1,4 +1,4 @@
-<form action="add_book.php" method="post">
+<form action="?pages=add_book" method="post">
     <label>Введите название книги</label>
     <input type="text" placeholder="Enter book title" name="book_title">
     <br> <br>
